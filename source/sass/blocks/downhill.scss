@@ -1,0 +1,160 @@
+.downhill {
+  padding: 6.2rem 0 10rem;
+
+  @media (max-width: $laptop) {
+    padding: 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 0 7.2rem;
+  }
+
+  &__title {
+    margin: 0 0 2.7rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__time {
+    display: inline-flex;
+    color: $white;
+    background-color: $red;
+    border-radius: 19px;
+    padding: 1rem 1.5rem;
+    font-size: 5rem;
+    line-height: 1.01;
+    font-family: $mossport;
+    text-transform: uppercase;
+    width: auto;
+    margin: 0 0 6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 3.6rem;
+      padding: 0.5rem 1.5rem;
+      text-align: center;
+      margin-top: 2.9rem;
+      border-radius: 12px;
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+    border-radius: 19px;
+    background-color: $pastelbg;
+    overflow: hidden;
+    color: $grey;
+
+    @media (max-width: $mobile) {
+      border-radius: 12px;
+    }
+  }
+
+  &__text {
+    max-width: 46.6rem;
+  }
+
+  &__texture-vertical {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 56rem;
+    height: 100%;
+    background-image: url(../img/texture2-vertical.png);
+    background-size: 57rem;
+    background-position: -57.6rem 18.3rem;
+    border-bottom-left-radius: 19px;
+    transform: rotate(180deg);
+    z-index: 1;
+
+    @media (max-width: $laptop) {
+      left: -8rem;
+    }
+
+    @media (max-width: $tablet) {
+      left: -18rem;
+    }
+
+    @media (max-width: $mobile) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      transform: rotate(180deg);
+      height: 17rem;
+      width: 100%;
+      background-image: url(../img/texture2.png);
+      background-repeat: repeat;
+      background-position: 0 16.7rem;
+      border-top-left-radius: 19px;
+      border-top-right-radius: 19px;
+      background-size: 34.2rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+
+    @media (max-width: $laptop) {
+      width: 45%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 31.2rem;
+    }
+  }
+
+  &__content {
+    padding: 3.8rem 0 6.3rem;
+    width: 56rem;
+    margin-left: auto;
+    font-size: 2.2rem;
+    line-height: 110%;
+    font-family: $monserrat;
+
+    @media (max-width: $tablet) {
+      padding: 3.8rem 2rem 6rem 3.8rem;
+      max-width: 38rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      padding: 2.1rem 8rem 26rem 2.1rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin: 0 0 3rem;
+
+        @media (max-width: $mobile) {
+          margin: 0 0 1rem;
+        }
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    border-radius: 21px;
+    margin-top: 2rem;
+    gap: 1rem;
+    padding: 0.8rem 1.6rem !important;
+    z-index: 5;
+    height: 3.5rem;
+
+    @media (max-width: $tablet) {
+      border-radius: 6px;
+      width: auto;
+    }
+  }
+}

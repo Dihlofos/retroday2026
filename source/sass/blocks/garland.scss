@@ -1,0 +1,57 @@
+.garland {
+  padding: 6.6rem 0 9rem;
+  color: $grey;
+
+  @media (max-width: $mobile) {
+    padding: 6.6rem 0 6rem;
+  }
+
+  .containt {
+    position: relative;
+  }
+
+  &__decor {
+
+  }
+
+  &__title {
+    margin: 0 0 4.4rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    max-width: 75.9rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__decor {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: unset;
+    width: 208.3rem;
+    margin-top: -13rem;
+    margin-left: -0.4rem;
+    user-select: none;
+    position: none;
+
+    @media (max-width: $tablet) {
+      width: 110%;
+      margin-top: -1rem;
+    }
+
+    @media(max-width: $mobile) {
+      width: 201%;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+.marquee {
+  overflow: hidden;
+  display: flex;
+  margin: 0 0 17rem;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  img {
+    max-width: unset;
+  }
+}
