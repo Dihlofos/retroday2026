@@ -92,22 +92,17 @@
 
   const locations = {
     1: {
-      title: "Богатырские забавы",
+      title: "Горка для тюбинга",
       time: "11:00–21:00",
       link: "#downhill",
     },
     2: {
-      title: "Царство зимних чудес",
-      time: "08:00–21:30",
-      link: "#ski",
-    },
-    3: {
-      title: "Лесное раздолье",
+      title: "Ретродень на катке",
       time: "14:30-17:30",
       link: "#skate",
     },
-    4: {
-      title: "Сцена",
+    3: {
+      title: "Зимние аттракционы, Фан-встречи, сцена",
       time: "11:00-19:00",
       link: "#scene",
     },
@@ -324,6 +319,20 @@
     navigation: {
       nextEl: ".js-main-next-concert",
       prevEl: ".js-main-prev-concert",
+    },
+  });
+
+  new Swiper(`.js-main-slider-fan`, {
+    // Optional parameters
+    slidesPerView: vw > 1024 ? 3 : 1,
+    spaceBetween: 40,
+    initialSlide: 0,
+    draggable: false,
+    pagination: false,
+    loop: false,
+    navigation: {
+      nextEl: ".js-main-next-fan",
+      prevEl: ".js-main-prev-fan",
     },
   });
 })();
