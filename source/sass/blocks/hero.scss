@@ -139,7 +139,7 @@
   .logos {
     display: flex;
     margin: 0 0 3.1rem;
-    max-width: 40.5rem;
+    max-width: 50.5rem;
     gap: 3.2rem;
     width: 100%;
     justify-content: space-between;
@@ -183,23 +183,42 @@
   }
 
   &__title {
-    font-size: 7rem;
-    line-height: 1;
-    font-family: $magnolia;
-    margin: 4.9rem 0 8rem;
+    margin: 4.9rem 0 3rem;
     max-width: 77.4rem;
 
-    @media (max-width: $tablet) {
-      font-size: 5rem;
-    }
-
     @media (max-width: $mobile) {
-      font-size: 3.6rem;
-      line-height: 1;
       max-width: 28rem;
       text-align: left;
       margin: 1.8rem 0 1.7rem;
     }
+
+    h1 {
+      font-size: 7rem;
+      line-height: 1;
+      font-family: $magnolia;
+      margin: 0 0 1rem;
+
+      @media (max-width: $tablet) {
+        font-size: 5rem;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 3.6rem;
+        line-height: 1;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $darkRed;
+    font-size: 4rem;
+    font-family: $magnolia;
+    line-height: 1;
+
+    @media (max-width: $mobile) {
+        font-size: 2.5rem;
+        line-height: 1;
+      }
   }
 
   &__description {
@@ -300,6 +319,10 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: center;
     }
   }
 
