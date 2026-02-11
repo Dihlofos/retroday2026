@@ -4,15 +4,21 @@
   &__box {
     position: relative;
     border-radius: 19px;
-    padding: 27.2rem 0 6rem;
+    padding: 24.2rem 0 6rem;
     background-color: $pastelbg;
     color: $red;
     overflow: hidden;
     z-index: 3;
 
     .container {
-        padding: 0 6rem;
+      padding: 0 6rem;
+    }
+
+    @media (max-width: $tablet) {
+      .container {
+        padding: 0 3rem;
       }
+    }
 
     @media (max-width: $mobile) {
       border-radius: 12px;
@@ -183,7 +189,7 @@
   }
 
   &__title {
-    margin: 4.9rem 0 3rem;
+    margin: 4.9rem 0 9rem;
     max-width: 77.4rem;
 
     @media (max-width: $mobile) {
